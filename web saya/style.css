@@ -1,0 +1,177 @@
+* {
+    font-family: "Rubik", sans-serif;
+    color: white;
+  }
+  body {
+    background-color: rgb(38, 36, 35);
+    margin: 0;
+  }
+  .header {
+    background-color: #e31b1b;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 6%;
+    padding: 15px 5px;
+    font-weight: 600;
+  }
+  .header div {
+    display: inline-block;
+  }
+  .navbar {
+    float: right;
+  }
+  .navbar div {
+    margin: 0 10px 0 0;
+  }
+  .navbar a {
+    text-decoration: none;
+    cursor: default;
+  }
+  .main {
+    margin: 100px 0 0 0;
+  }
+  .hero {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    font-size: 72px;
+    font-weight: 600;
+  }
+  .hello div {
+    font-weight: normal;
+    font-size: 60px;
+    padding-top: 2%;
+  }
+  .hello a {
+    cursor: default;
+  }
+  .hero .desc {
+    margin-top: 0px;
+    font-size: 20px;
+  }
+  .line {
+    width: 20%;
+    background-color: #ff4646;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  .hero .image img {
+    border-radius: 15%;
+    height: 420px;
+  }
+  .contact {
+    margin-top: 0px;
+  }
+  .contact iconify-icon {
+    margin: 0 5px 0 0;
+  }
+  .hero button {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #f7f7f7;
+    border: 2px solid #ff4646;
+    width: 50%;
+  }
+  .about {
+    margin-top: 5%;
+    background-color: #ff4646;
+    padding: 60px 20px;
+    cursor: default;
+    display: grid;
+    grid-template-columns: 30% auto;
+    font-size: 20px;
+  }
+  .about .image img {
+    height: 300px;
+    border-radius: 15%;
+    margin: 0;
+  }
+  .about p,
+  .about h2,
+  .about table tr td {
+    color: black;
+  }
+  .edu {
+    padding: 40px 20px;
+    backgroundcolor: #2b0303;
+    font-size: 20px;
+  }
+  .edu table tr td {
+    text-align: center;
+    padding: 50px;
+  }
+  .edu table tr td p {
+    margin: 0;
+  }
+  .edu-content {
+    display: grid;
+    grid-template-columns: 60% auto;
+    margin-top: 20px;
+  }
+  .edu-content .image img,
+  .skill-content .image img {
+    height: 300px;
+    margin: 0;
+  }
+  .Ringkasan Materi{
+    background-color: #ff4646;
+    padding: 40px 20px;
+    color: bisque;
+    font-size: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    .header {
+      height: 20px;
+      width: 100%;
+      font-size: 18px;
+      position: fixed;
+      vertical-align: middle;
+    }
+    .main {
+      margin-top: 40px;
+    }
+    .navbar {
+      padding: 4px 0 0 0;
+      font-size: 14px;
+      font-weight: normal;
+    }
+    .hero,
+    .about,
+    .edu-content,
+    .Ringkasan Materi {
+      grid-template-columns: none;
+      grid-template-rows: repeat(2, auto);
+    }
+    .hero .image {
+      grid-row-start: 1;
+    }
+    .hero .image img {
+      height: 300px;
+      display: none;
+    }
+    .hello div {
+      font-size: 30px;
+    }
+    .hero .desc {
+      font-size: 18px;
+    }
+    .edu table tr td {
+      padding: 8px;
+    }
+  
+    .edu-content .image img {
+      height: 200px;s
+    }
+    .Ringkasan Materi-content .image img {
+      height: 200px;
+    }
+    .Ringkasan Materi-content {
+      display: grid;
+      grid-template-columns: 50% auto;
+      margin-top: 20px;
+    }
+  }
